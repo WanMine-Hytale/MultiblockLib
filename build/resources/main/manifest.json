@@ -1,0 +1,20 @@
+{
+    "Group": "Diamantino",
+    "Name": "MultiblockLib",
+    "Version": "1.0.0",
+    "Description": "An Hytale mod that provides a library for creating multiblock structures.",
+    "Authors": [
+        {
+            "Name": "Diamantino",
+            "Email": "diamantino.op@gmail.com",
+            "Url": ""
+        }
+    ],
+    "Website": "",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": false,
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "ServerVersion": "2026.02.19-1a311a592",
+    "Main": "com.diamantino.multiblocklib.MultiblockLib"
+}

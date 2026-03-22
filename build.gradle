@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.diamantino'
+version = '1.0.0'
+
+def serverRunDir = file("$projectDir/run")
+if (!serverRunDir.exists()) {
+    serverRunDir.mkdirs()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url "https://cursemaven.com"
+    }
+}
+
+dependencies {
+    implementation files("${project.property('hytale.server_dir')}/Server/HytaleServer.jar")
+}
